@@ -25,4 +25,4 @@ $$
 -  reading syllabus  
 -  To be Published !
 
-For more reference, searching on [baidu](baidu.com).
+For more reference, searching on [baidu](https://www.baidu.com/).

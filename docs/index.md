@@ -1,6 +1,6 @@
 # 你好
 
-这里是Lucas Chen的个人网站 <https://lucas-chensq.github.io/mkdocs/>
+这里是Lucas Chen的个人网站 <https://github.com/ustcwxlzy/lucas-homepage>
 
 - 通过主题和目录以打开文章
     - PC端 在上方标签栏选择主题 在左侧目录选择文章
