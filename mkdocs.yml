@@ -1,0 +1,175 @@
+# [Info]
+site_name: Lucas-Chen的个人网站 # 左上角标题
+site_url: https://lucas-chensq.github.io/mkdocs/
+site_author: csq
+site_description: csq的个人网站
+
+# [Navigtion]
+nav:
+  - 讲稿:
+    - LECTURE/index.md 
+    - Convexopt:
+      - Lec-1 Convex sets and functions: LECTURE/convexopt/convex-lec1.md
+      - Lec-2 Convex basics: LECTURE/convexopt/convex-lec2.md
+
+    - Linear algebra:
+      - introduction: LECTURE/linear_algebra/linear-lec1.md
+
+  - 博客:
+    - BLOG/index.md
+    - BLOG/others.md
+    - macOS:
+      - BLOG/macOS/stream.md
+
+  - 开发:
+    - DEV/index.md
+    - DEV/interest.md
+    # - React:
+    #   - DEV/React/h5.md
+    #   - DEV/React/notes.md
+    #   - DEV/React/vite.md
+  - 研究:
+    - RESEARCH/index.md
+
+    # - GPU:
+    #   - RESEARCH/Gpu/gpu.md
+    #   - RESEARCH/Gpu/cuda.md
+  - 二次元:
+    - 2/index.md
+  #   - 番:
+  #     - 2/Anime/anime-rating.md
+  #     - 2/Anime/anime-rating-extraordinary.md
+  #     - 2/Anime/anime-rating-great.md
+  #     - 2/Anime/anime-rating-good.md
+  #   - 喜欢的:
+  #     - 2/Sukina/pictures.md
+  #     - 2/Sukina/kawaii.md
+  #     - 2/Sukina/kawaii-koe.md
+  #     - 2/Sukina/artists.md
+  #     - 2/Sukina/vtuber.md
+  #     - 2/Sukina/voice.md
+  #   - Galgame:
+  #     - 2/Galgame/ddlc.md
+  #   - 原神:
+  #     - 2/Games/Genshin/characters.md
+  #     - 2/Games/Genshin/graphic-quality.md
+  #     - 2/Games/Genshin/controller.md
+  #     - 2/Games/Genshin/food.md
+    - Apex:
+      - 2/Games/Apex/controller-aim.md
+      - 2/Games/Apex/controller-settings.md
+      - 2/Games/Apex/zhidong-settings.md
+      - 2/Games/Apex/key-mouse-settings.md
+      - 2/Games/Apex/characters.md
+      - 2/Games/Apex/17.md
+  # - 转载:
+  #   - REPRODUCE/index.md
+  #   - 演讲:
+  #     - REPRODUCE/speech/tim-cook-at-duke.md
+  #   - 摘录:
+  #     - REPRODUCE/book/harford-occupation-choice.md
+  #     - REPRODUCE/book/the-long-view.md
+  #   - 文章:
+  #     - REPRODUCE/article/proses.md
+  #     - REPRODUCE/article/my-best-teacher.md
+  #   - 博客:
+  #     - REPRODUCE/blog/how-to-ask-questions-the-smart-way.md
+  #   - 歌词:
+  #     - REPRODUCE/lyrics/watagumo.md
+  #   - 诗:
+  #     - REPRODUCE/poem/poems.md
+  # - 网站:
+  #   - WEBSITE/index.md # 访客打开网站第一个看到的是 docs/index.md（会报错 The following pages exist in the docs directory, but are not included in the "nav" configuration: index.md 不要紧）  如果访客之后想要重新看到这个界面  可以在 docs/WEBSITE/index.md 找到
+  #   - WEBSITE/build.md
+  #   - WEBSITE/help.md
+  #   - WEBSITE/test.md
+  # - 随笔:
+  #   - ESSAY/index.md
+  #   - 随笔记:
+  #     - ESSAY/Jottings/2309.md
+
+  #   - 文章:
+  #     - ESSAY/Articles/231018-research.md
+      
+  # - 我:
+  #   - ME/index.md
+  #   - ME/introduction.md
+    
+
+# [UI]
+## [top]
+theme:
+  name: material
+  palette:
+    - scheme: default # 日间模式
+      primary: indigo # 上方的
+      accent: orange # 链接等可交互元件的高亮色
+      toggle:
+        icon: material/weather-night # 图标
+        name: 切换至夜间模式 # 鼠标悬浮提示
+    - scheme: slate # 夜间模式
+      primary: indigo
+      accent: orange
+      toggle:
+        icon: material/weather-sunny
+        name: 切换至日间模式
+  features:
+    - navigation.tabs # 使用Tab来进行分类
+    - navigation.top # 返回顶部的按钮 在上滑时出现
+    - navigation.indexes # Tab会有一个index.md 而不是在打开Tab时打开第一篇文章
+    - navigation.expand # 打开Tab时左侧目录全部展开
+    - search.suggest # 搜索输入一些字母时推荐补全整个单词
+    - search.highlight # 搜索出的文章关键词加入高亮
+    - content.code.copy # 可以通过按钮复制代码
+    - content.action.edit # 点击按钮跳转到编辑页面  需要结合 edit_uri 一起使用
+  language: zh # 一些提示性的文字会变成中文
+  icon:
+    repo: fontawesome/brands/github
+edit_uri: edit/main/docs # 编辑按钮跳转的链接
+## [top-right corner]
+repo_url: https://github.com/zhaoolee/pi # 右上角点击跳转的链接
+repo_name: Lucas-Chensq.github.io # 右上角的名字
+## [bottom-left corner]
+copyright: Lucas-Chensq CC-BY-4.0 # 左下角的版权声明
+## [bottom-right corner]
+extra:
+  social: # icons
+    # - icon: fontawesome/brands/bilibili
+    #   link: https://space.bilibili.com/392601818
+    #   name: Bilibili | Lucas # 鼠标悬浮提示
+    - icon: fontawesome/brands/github
+      link: https://github.com/Lucas-Chensq
+      name: GitHub | Lucas-Chen
+
+# [Extensions]
+plugins:
+  - search: # 现在还不支持中文搜索 支持之后可以设置语言
+    # insider已经支持中文的分词搜索了 https://squidfunk.github.io/mkdocs-material/blog/2022/chinese-search-support/
+      lang:
+        - en
+        - ja
+  - tags # 给单篇文章添加标签 https://squidfunk.github.io/mkdocs-material/setup/setting-up-tags/?h=tags
+markdown_extensions:
+  - pymdownx.arithmatex: # latex支持
+      generic: true
+  - attr_list # 给图片后面添加{width="300"}设置大小
+  - toc:
+      permalink: true # 固定标题位置为当前位置
+  - pymdownx.highlight: # 代码块高亮
+      # linenums: true # 显示行号
+      # auto_title: true # 显示编程语言名称
+  - pymdownx.superfences # 代码块高亮插件
+  - meta # 支持Markdown文件上方自定义标题标签等
+  - admonition # https://squidfunk.github.io/mkdocs-material/reference/admonitions/#inline-blocks
+  - pymdownx.details # admonition需要
+
+extra_javascript:
+  # latex支持
+  # check https://squidfunk.github.io/mkdocs-material/reference/mathjax/?h=math for more information
+  # notice `curl https://polyfill.io/v3/polyfill.min.js?features=es6 > docs/mkdocs/javascripts/polyfill.min.js && curl https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js > docs/mkdocs/javascripts/tex-mml-chtml.js` not works... because there are other resources that need to load
+  - mkdocs/javascripts/mathjax.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js # https://cdn.bytedance.com/?query=mathjax&version=3.2.0
+extra_css:
+  - mkdocs/css/no-footer.css # 不使用底部的翻页
+  - mkdocs/css/unordered-list-symbols.css # multiplt unordered list symbols
