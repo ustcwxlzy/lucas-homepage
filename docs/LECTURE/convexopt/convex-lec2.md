@@ -23,6 +23,6 @@ $$
 ## TODO List
 -  properties of cone
 -  reading syllabus  
-- [ ] To be Published !
+-  To be Published !
 
 For more reference, searching on [baidu](baidu.com).
