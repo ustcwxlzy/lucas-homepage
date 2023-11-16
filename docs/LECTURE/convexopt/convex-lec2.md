@@ -3,7 +3,7 @@
 ### Third theme
 
 ```python
-print("wlcome to convex opt!")
+print("welcome to convex opt!")
 ```
 
 This is **blod**.
